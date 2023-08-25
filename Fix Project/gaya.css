@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Tilt+Prism&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+body{
+    font-family: 'Lora', serif;
+}
+
+.nav{
+    background: #1e1e1e;
+    height: 80px;
+    width: 100%;
+}
+
+.logo{
+    color: #ee9b26;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 25px;
+    font-weight: bold;
+    font-family: 'Tilt Prism', cursive;
+}
+
+.nav-ul{
+    float: right;
+    margin-right: 15px;
+}
+
+.nav-li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+.nav-li a{
+    color: #ee9b26;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 5px;
+    margin-right: 2px;
+}
+
+.nav-li a:hover{
+    background-color: white;
+    transition: .5s;
+    border-radius: 5px;
+}
+
+.check-btn{
+    font-size: 30px;
+    color: #ee9b26;
+    float: right;
+    line-height: 80px;
+    margin-right: 25px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+@media(max-width:980px){
+    .check-btn{
+        display: block;
+    }
+    .nav-ul{
+       position: fixed;
+       width: 100%;
+       height: 100vh;
+       background: grey;
+       text-align: center;
+       left: -100%;
+       transition: all .5s;
+    }
+
+    .nav-li{
+        display: block;
+    }
+
+    .nav-li a{
+        font-size: 20px;
+    }
+
+    .nav-li a:hover{
+        background: none;
+        color:#1e1e1e;
+    }
+
+    #check:checked ~ .nav-ul{
+        left: 0;
+    }
+
+}
+
+.peta{
+    width: 50%;
+    height: 50%;
+    margin: 5px;
+}
+
+.sejarah li{
+    padding: 5px;
+}
+
+.indah{
+    width: 50%;
+    height: 50%;
+    margin: 5px;
+}
+
+.article-card{
+    margin: 10px;
+    text-align: justify;
+    border: 3px solid #1e1e1e;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+.footer{
+    bottom: 0px;
+    background-color: #1e1e1e;
+    height: 50px;
+    width: 100%;
+}
+
+.footer h3{
+    float: left;
+    color: #ee9b26;
+    margin: 10px;
+}
